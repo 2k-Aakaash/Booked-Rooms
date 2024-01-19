@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booked Rooms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="booked-rooms-module">
+            <h2>Booked Rooms</h2>
+            <div class="filter-options">
+              <label for="checkout-filter">Expected Check-out:</label>
+              <input type="checkbox" id="checkout-filter" onclick="filterByCheckOut()">
+            </div>
+            <div class="sort-options">
+              <label for="sort-by">Sort by:</label>
+              <select id="sort-by" onchange="sortBookedRooms()">
+                <option value="roomNumber">Room Number</option>
+                <option value="checkInDate">Check-in Date</option>
+                <!-- Add more options based on your requirements -->
+              </select>
+            </div>
+            <div class="booked-rooms-container" id="booked-rooms-container">
+              <!-- Display booked rooms dynamically using JavaScript -->
+            </div>
+            <div class="special-rooms">
+                <h3>Special Rooms</h3>
+                <div class="room-row">
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                  <!-- Special rooms - Floor 1 -->
+                  <!-- Add 10 rooms here -->
+                </div>
+                <div class="room-row">
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                  <!-- Special rooms - Floor 2 -->
+                  <!-- Add another 10 rooms here -->
+                </div>
+              </div>
+          
+              <div class="class-a-rooms">
+                <h3>A Class Rooms</h3>
+                <div class="room-row">
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                  <!-- A class rooms - Floor 1 -->
+                  <!-- Add 10 rooms here -->
+                </div>
+                <div class="room-row">
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                  <!-- A class rooms - Floor 2 -->
+                  <!-- Add another 10 rooms here -->
+                </div>
+              </div>
+          
+              <div class="class-b-rooms">
+                <h3>B Class Rooms</h3>
+                <div class="room-row">
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                  <!-- B class rooms - Floor 1 -->
+                  <!-- Add 10 rooms here -->
+                </div>
+                <div class="room-row">
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                  <!-- B class rooms - Floor 2 -->
+                  <!-- Add another 10 rooms here -->
+                </div>
+              </div>
+          
+              <div class="class-c-rooms">
+                <h3>C Class Rooms</h3>
+                <div class="room-row">
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                  <!-- C class rooms - Floor 1 -->
+                  <!-- Add 10 rooms here -->
+                </div>
+                <div class="room-row">
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <div class="room-box"></div>
+                    <!-- C class rooms - Floor 2 -->
+                    <!-- Add 10 rooms here -->
+                </div>
+          </div>
+          <div class="class-c-rooms">
+            <h3>D Class Rooms</h3>
+            <div class="room-row">
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+              <!-- D class rooms - Floor 1 -->
+              <!-- Add 10 rooms here -->
+            </div>
+            <div class="room-row">
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <!-- D class rooms - Floor 2 -->
+                <!-- Add 10 rooms here -->
+            </div>
+            <div class="room-row">
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <div class="room-box"></div>
+                <!-- D class rooms - Floor 3 -->
+                <!-- Add 10 rooms here -->
+            </div>
+      </div>   
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

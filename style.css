@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Tommy-Light';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Light_PERSONAL%20USE.woff?updatedAt=1705584800309') format('woff');
+    }
+
+@font-face {
+    font-family: 'Tommy-Black';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Black_PERSONAL%20USE.woff?updatedAt=1705584800352') format('woff');
+    }
+
+@font-face {
+    font-family: 'Tommy-Medium';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Medium_PERSONAL%20USE.woff?updatedAt=1705584800728') format('woff');
+    }
+
+@font-face {
+    font-family: 'Tommy-ExtraBold';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20ExtraBold_PERSONAL%20USE.woff?updatedAt=1705584800762') format('woff');
+    } 
+
+@font-face {
+    font-family: 'Tommy-Regular';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Regular_PERSONAL%20USE.woff?updatedAt=1705584800828') format('woff');
+    } 
+
+@font-face {
+    font-family: 'Tommy-Thin';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Thin_PERSONAL%20USE.woff?updatedAt=1705584800910') format('woff');
+    }
+
+@font-face {
+    font-family: 'Tommy-Bold';
+    src: url('https://ik.imagekit.io/026k2i7ys/fonts/MADE%20TOMMY%20Thin_PERSONAL%20USE.woff?updatedAt=1705584800910') format('woff');
+    }
+
+*{
+    font-family: 'Tommy-Regular';
+}
+
+body{
+    background-color: rgb(254 254 254);
+    margin: 0;
+    padding: 0;
+}
+
+.booked-rooms-module {
+    /* Add your styling for the module container */
+  }
+  
+  /* .filter-options,
+  .sort-options {
+    margin-bottom: 10px;
+  }
+  
+  .booked-rooms-container {
+
+  }
+  
+  .booked-rooms-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .room-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+
+  .special-rooms,
+  .class-a-rooms,
+  .class-b-rooms,
+  .class-c-rooms,
+  .class-d-rooms {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+  }
+  
+  .special-rooms h3,
+  .class-a-rooms h3,
+  .class-b-rooms h3,
+  .class-c-rooms h3,
+  .class-d-rooms h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+   */
+
+   .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .booked-rooms-module {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-options,
+  .sort-options {
+    margin-bottom: 10px;
+  }
+  
+  .room-row {
+    display: flex;
+  }
+  
+  .room-box {
+    width: 40px;
+    height: 40px;
+    margin: 5px; /* Add margin for spacing between boxes */
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .special .room-box,
+  .class-a-rooms .room-box,
+  .class-b-rooms .room-box,
+  .class-c-rooms .room-box,
+  .class-d-rooms .room-box {
+    background-color: lightgreen; /* Free rooms color */
+  }
+  
+  .class-d-rooms .room-box {
+    background-color: lightcoral; /* Free rooms color for D class */
+  }
+  
+  .room-booked {
+    background-color: grey; /* Booked rooms color */
+    cursor: not-allowed;
+  }
+  
+  h3 {
+    margin-bottom: 5px;
+  }
